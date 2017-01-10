@@ -17,6 +17,7 @@ Calculate win/loss total and add to funds
 (function crownAndAnchorGame() {
   'use strict';
   const funds = 100;
+  const rollButton = document.querySelector('a');
   const symbols = ['Crown', 'Anchor', 'Heart', 'Club', 'Spade', 'Diamond'];
   const selectedSymbols = [];
   const symbolsContainer = document.createElement('div');
@@ -69,7 +70,22 @@ Calculate win/loss total and add to funds
     }
   }
 
+  function diceRoll() {
+    const symbols = ['❤️', '👑', '🔶', '♠️', '⚓️', '♣️'];
+    const dice1Face = document.querySelector('#dice1');
+    const dice2Face = document.querySelector('#dice2');
+    const dice3Face = document.querySelector('#dice3');
+
+    const dice1Index = Math.floor(Math.random() * 6);
+    const dice2Index = Math.floor(Math.random() * 6);
+    const dice3Index = Math.floor(Math.random() * 6);
+
+    dice1Face.innerHTML = symbols[dice1Index];
+    dice2Face.innerHTML = symbols[dice2Index];
+    dice3Face.innerHTML = symbols[dice3Index];
+  }
+
   symbolsContainer.addEventListener('click', updateSelectedSymbols);
-  
+  rollButton.addEventListener('click', diceRoll);
 
 })();
