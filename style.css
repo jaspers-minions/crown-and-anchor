@@ -10,6 +10,7 @@ table {
 th {
   border: 3px solid white;
   font-size: 30px;
+  vertical-align: middle;
 }
 th:hover {
   background: rgb(226, 194, 213);

@@ -2,22 +2,34 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <title>Crown and Anchor</title>
   </head>
   <body>
     <h1>Crown and Anchor</h1>
-
     <table>
       <tr>
-        <th id="heart">❤️</th>
-        <th id="crown">👑</th>
-        <th id="diamond">🔶</th>
+        <th id="heart">❤️
+          <input type="number" min="0" max="5" value="0">
+        </th>
+        <th id="crown">👑
+          <input type="number" min="0" max="5" value="0">
+        </th>
+        <th id="diamond">🔶
+          <input type="number" min="0" max="5" value="0">
+        </th>
       </tr>
       <tr>
-        <th id="spade">♠️</th>
-        <th id="anchor">⚓️</th>
-        <th id="club">♣️</th>
+        <th id="spade">♠️
+          <input type="number" min="0" max="5" value="0">
+        </th>
+        <th id="anchor">⚓️
+          <input type="number" min="0" max="5" value="0">
+        </th>
+        <th id="club">♣️
+          <input type="number" min="0" max="5" value="0">
+        </th>
       </tr>
     </table>
 
@@ -37,7 +49,7 @@
     </div>
 
     <div class="funds">
-
+      <h2>Funds: </h2><p></p>
     </div>
 
     <script src="main.js" charset="utf-8"></script>
